@@ -1,0 +1,24 @@
+# --- Веб-интерфейс ---
+streamlit>=1.33
+
+# --- Мозг: Google Gemini (НЕ Anthropic — нужен доступ из РФ) ---
+langchain-google-genai>=1.0
+langchain-core>=0.2
+
+# --- Чтение PDF (текстовый слой) ---
+pdfplumber>=0.11
+
+# --- Сборка .docx ---
+python-docx>=1.1
+
+# --- Обезличивание ПДн: ФИО/адреса (regex-слой работает и без этого пакета) ---
+natasha>=1.6
+
+# --- OCR сканов без текстового слоя (опционально) ---
+# Требуют системных пакетов: tesseract-ocr (+ tesseract-ocr-rus) и poppler-utils.
+# Без них приложение не падает, а просит PDF с текстовым слоем.
+pytesseract>=0.3.10
+pdf2image>=1.17
+
+# --- Тесты ---
+pytest>=8.0
