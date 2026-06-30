@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.docx
+.streamlit/secrets.toml
+.env
+.chroma/
+.pytest_cache/
